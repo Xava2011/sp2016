@@ -1,3 +1,5 @@
+// elementarz 2  (bez tabelki)
+
 #include <stdio.h>
 
 int main() {
