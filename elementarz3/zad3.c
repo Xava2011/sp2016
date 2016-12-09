@@ -1,27 +1,13 @@
-// elementarz 2  (bez tabelki)
-
 #include <stdio.h>
-
+#include <math.h>
 int main() {
-  double pi = 4;
-  int x;
-  double dziel = 3;
-  int znak = 1;
-
-  printf("podaj liczbę naturalną: ");
-scanf("%d/n", &x);
-
-
-for (int i = 0; i < x; i++, dziel += 2)  {
-  if (znak==1)   {
-    //pi -= ( 4 / dziel );
-    znak = -1;
-
-    } else {
-    //pi += (4 / dziel);
-    znak = 1;
+  for(int a = 1; a < 334; a++) {
+    for(int b = a; b < 501; b++) {
+      for(int c = b; a+b+c <= 1000 ; c++) {
+        if (a*a + b*b == c*c) {
+          printf("%d\t%d\t%d\n", a, b, c);
+        }
+      }
+    }
   }
-  pi += znak * (4 / dziel);
-}
-printf("%f\n", pi);
 }
