@@ -5,9 +5,11 @@ double przeciwprostokatna(double a,double b) {
   c = sqrt(a*a + b*b);
   return c;
 }
+
 int main() {
   double a, b, c;
-  scanf("%lf %lf", &a, &b);
-  c = przeciwprostokatna(a,b);
-  printf("%lf\n", c);
+
+  scanf("%lf %lf", &a, &b);   //wszycztaj dane
+  c = przeciwprostokatna(a,b); //policz wyniki
+  printf("%lf\n", c); //wypisz
 }
