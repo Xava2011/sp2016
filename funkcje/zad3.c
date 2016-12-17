@@ -1,4 +1,4 @@
-
+// policzyć do 35 000 000
 #include <stdio.h>
 
 int isperfect(int n) {
