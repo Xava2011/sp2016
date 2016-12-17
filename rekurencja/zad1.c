@@ -4,7 +4,7 @@
 
     #include <stdio.h>
 
-    int nk(int podstawa, unsigned int wykladnik);
+    double nk(int podstawa, unsigned int wykladnik);
 
     int main() {
       printf("5^4 = %.2lf\n", nk(5, 4));
