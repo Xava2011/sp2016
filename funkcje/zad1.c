@@ -9,7 +9,7 @@ double przeciwprostokatna(double a,double b) {
 int main() {
   double a, b, c;
 
-  scanf("%lf %lf", &a, &b);   //wszycztaj dane
+  scanf("%lf %lf", &a, &b);   //wczytaj dane
   c = przeciwprostokatna(a,b); //policz wyniki
-  printf("%lf\n", c); //wypisz
+  printf("%lf\n", c); //wypisz wynik 
 }

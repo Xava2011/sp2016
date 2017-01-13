@@ -1,15 +1,33 @@
 #include <stdio.h>
 
-void tablica(int n) {
-  int tab[n];
-  for(int a = 0; a < n; a++)
-    scanf("%d", &tab[a]);
-  for(int a = 0; a < n; a++)
-    printf("%d ", tab[a]);
+void wczytaj_6_liczb( int tablica[] ){
+  int i;
+  for (i = 0; i <= 5; i++){
+    printf("Podaj liczbę: ");
+    scanf("%d", &tablica[i]);
+  }
+}
+
+void liczby2(int tablica[]){
+  int i;
+  for (i = 5; i >= 0; i--){
+    printf("liczba numer %d = %d\n", i, tablica[i]);
+  }
+}
+
+void liczby(int tablica[]){
+  int i;
+  for (i = 0; i <= 5; i++){
+    printf("liczba numer %d = %d\n", i, tablica[i]);
+  }
 }
 
 int main() {
-  int n;
-  scanf("%d", &n);
-  tablica(n);
+  int tablica[5];
+
+  wczytaj_6_liczb(tablica);
+  printf("\nWpisane przez Ciebie liczby:\n");
+  liczby(tablica);
+  printf("\nWpisane przez Ciebie liczby(odwrotnie):\n");
+  liczby2(tablica);
 }

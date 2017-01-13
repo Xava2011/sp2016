@@ -6,4 +6,4 @@ all: zad1 zad2 zad3 zad4
 
 
 clean:
-		rm -f *.o *~ zad1 zad2 zad3 zad4 zad5
+		rm -f *.o *~ zad1 zad2 zad3 zad4 

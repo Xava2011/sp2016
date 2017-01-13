@@ -1,14 +1,11 @@
-// do popr
-
-#include <stdio.h>
+include <stdio.h>
+#include <stdlib.h>
 
 int silnia(int a) {
   int s = 1;
-
-  if (a < 1) {
-    printf("błąd: silnia jest zdefinowana dla licz nieujemnych; podano %d\n", a);
-    exit(1);
-
+  if(a < 1) {
+    printf("Błąd silnia jest zdefiniowana dla liczb nieujemnych podano %d\n", a);
+    return 0;
   } else {
     for(int n = 2;n <= a; n++) {
       s = s * n;
@@ -16,9 +13,9 @@ int silnia(int a) {
     return s;
   }
 }
-
 int main() {
-  for(int n = 1; n < 11; n++) {
-    printf("%d %d\n", n, silnia(n));
+  for(int n = 1; n <= 10; n++) {
+    printf("%d\n ", silnia(n));
   }
+  printf("\n");
 }
